@@ -84,7 +84,7 @@ const CheckoutDetails = () => {
                                         name="firstName"
                                         value={formData.fullName}
                                         onChange={handleInputChange}
-                                        className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 ${errors.fullName ? 'border-red-500' : ''}`}
+                                        className={`mt-1 block w-full rounded-md border-gray-300 shadow-xs focus:border-blue-500 focus:ring-blue-500 ${errors.fullName ? 'border-red-500' : ''}`}
                                     />
                                     {errors.fullName && <p className="text-red-500 text-sm mt-1">{errors.fullName}</p>}
                                 </div>
@@ -97,7 +97,7 @@ const CheckoutDetails = () => {
                                     name="streetAddress"
                                     value={formData.address}
                                     onChange={handleInputChange}
-                                    className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 ${errors.address ? 'border-red-500' : ''}`}
+                                    className={`mt-1 block w-full rounded-md border-gray-300 shadow-xs focus:border-blue-500 focus:ring-blue-500 ${errors.address ? 'border-red-500' : ''}`}
                                 />
                                 {errors.address && <p className="text-red-500 text-sm mt-1">{errors.address}</p>}
                             </div>
@@ -105,7 +105,7 @@ const CheckoutDetails = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700">Email Address</label>
-                                    <div className="mt-1 relative rounded-md shadow-sm">
+                                    <div className="mt-1 relative rounded-md shadow-xs">
                                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                             <Mail className="text-gray-400" />
                                         </div>
@@ -114,14 +114,14 @@ const CheckoutDetails = () => {
                                             name="email"
                                             value={formData.email}
                                             onChange={handleInputChange}
-                                            className={`pl-10 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 ${errors.email ? 'border-red-500' : ''}`}
+                                            className={`pl-10 block w-full rounded-md border-gray-300 shadow-xs focus:border-blue-500 focus:ring-blue-500 ${errors.email ? 'border-red-500' : ''}`}
                                         />
                                     </div>
                                     {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
                                 </div>
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700">Phone Number</label>
-                                    <div className="mt-1 relative rounded-md shadow-sm">
+                                    <div className="mt-1 relative rounded-md shadow-xs">
                                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                             <Phone className="text-gray-400" />
                                         </div>
@@ -130,7 +130,7 @@ const CheckoutDetails = () => {
                                             name="phone"
                                             value={formData.phone}
                                             onChange={handleInputChange}
-                                            className={`pl-10 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 ${errors.phone ? 'border-red-500' : ''}`}
+                                            className={`pl-10 block w-full rounded-md border-gray-300 shadow-xs focus:border-blue-500 focus:ring-blue-500 ${errors.phone ? 'border-red-500' : ''}`}
                                         />
                                     </div>
                                     {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
