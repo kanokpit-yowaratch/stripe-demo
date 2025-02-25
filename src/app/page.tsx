@@ -1,7 +1,5 @@
-import CheckoutDetails from "@/components/checkout/Checkout";
+import CheckoutDetails from '@/components/checkout/Checkout';
 
 export default function Home() {
-  return (
-    <CheckoutDetails />
-  );
+	return <CheckoutDetails />;
 }
