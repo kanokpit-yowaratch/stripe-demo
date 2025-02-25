@@ -12,6 +12,7 @@ import {
 import { formatNumber } from '@/utils/common';
 import { loadStripe } from '@stripe/stripe-js';
 import NextImage from 'next/image';
+import Link from 'next/link';
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!).then((stripe) => {
 	if (!stripe) {
@@ -155,6 +156,9 @@ const CheckoutDetails = () => {
 								/>
 								{errors.address && <p className="text-red-500 text-sm mt-1">{errors.address}</p>}
 							</div>
+							<Link href="/" className="text-blue-500 hover:underline">
+								Back to home
+							</Link>
 						</div>
 
 						<div className="bg-white rounded-lg shadow-lg p-6">
