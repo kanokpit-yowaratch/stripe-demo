@@ -202,7 +202,7 @@ const CheckoutDetails = () => {
 									type="submit"
 									disabled={!isFormValid}
 									className={`w-full py-2 mt-4 bg-sky-500 px-4 text-white rounded-md transition-colors cursor-pointer ${isFormValid ? 'bg-sky-500 hover:bg-sky-600' : 'bg-gray-400 cursor-not-allowed'}`}>
-									{loading ? "Loading..." : "Checkout"}
+									{loading ? 'Loading...' : 'Checkout'}
 								</button>
 							</div>
 						</div>
