@@ -1,12 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, FormEvent, ChangeEvent } from 'react';
 import { ShoppingBag, MapPin, Mail, Phone } from 'lucide-react';
 import {
 	intitialShippingAddress,
 	intitialShippingAddressError,
 	ShippingAddress,
 	ShippingAddressError,
+	TargetType,
 } from '@/types/common';
 import { formatNumber } from '@/utils/common';
 import { loadStripe } from '@stripe/stripe-js';
@@ -57,7 +58,7 @@ const CheckoutDetails = () => {
 		setIsFormValid(isValid);
 	}, [formData]);
 
-	const handleInputChange = (e: any) => {
+	const handleInputChange = (e: ChangeEvent<TargetType>) => {
 		const { name, value } = e.target;
 		setFormData((prev: ShippingAddress) => ({
 			...prev,
@@ -73,7 +74,7 @@ const CheckoutDetails = () => {
 	const shipping = 25.0;
 	const total = subtotal + shipping;
 
-	const handleSubmit = async (e: any) => {
+	const handleSubmit = async (e: FormEvent) => {
 		e.preventDefault();
 
 		setLoading(true);
