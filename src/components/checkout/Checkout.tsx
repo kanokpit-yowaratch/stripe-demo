@@ -165,7 +165,7 @@ const CheckoutDetails = () => {
 										<p className="text-gray-500">Quantity: {item.quantity}</p>
 									</div>
 									<div>
-										<p className="font-medium">{item.price.toFixed(2)} บาท</p>
+										<p className="font-medium">{formatNumber(item.price)} บาท</p>
 									</div>
 								</div>
 							))}
@@ -173,7 +173,7 @@ const CheckoutDetails = () => {
 							<div className="space-y-1 mt-2">
 								<div className="flex justify-between text-gray-600">
 									<span>รวม</span>
-									<span>{subtotal.toFixed(2)} บาท</span>
+									<span>{formatNumber(subtotal)} บาท</span>
 								</div>
 								<div className="flex justify-between text-gray-600">
 									<span>ค่าจัดส่ง</span>
