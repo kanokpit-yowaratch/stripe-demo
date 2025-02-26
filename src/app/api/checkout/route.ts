@@ -4,10 +4,12 @@ import { NextRequest } from 'next/server';
 const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY!);
 
 export async function POST(req: NextRequest) {
+	const url = new URL(req.url);
+	const origin = url.origin;
+
 	try {
 		const { items } = await req.json();
 
-		// Convert items to the format Stripe expects
 		const lineItems = items.map((item: { name: string; price: number; quantity: number }) => ({
 			price_data: {
 				currency: 'thb',
@@ -23,8 +25,8 @@ export async function POST(req: NextRequest) {
 			// payment_method_types: ['card'],
 			line_items: lineItems,
 			mode: 'payment',
-			success_url: `${process.env.NEXT_PUBLIC_URL}/success`,
-			cancel_url: `${process.env.NEXT_PUBLIC_URL}/cancel`,
+			success_url: `${origin}/success`,
+			cancel_url: `${origin}/cancel`,
 		});
 
 		return Response.json({ sessionId: session.id });
