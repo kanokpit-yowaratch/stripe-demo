@@ -31,14 +31,13 @@ export default function SettingUpStripe() {
 							height="315"
 							src="https://www.youtube.com/embed/PjlY5fT0CCs?si=Wn0Et1y5opfxkDtR"
 							title="YouTube video player"
-							frameBorder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerPolicy="strict-origin-when-cross-origin"
 							allowFullScreen></iframe>
 
-						<ul className="text-gray-600 my-4">
-							<li>- ถ้าต้องการใช้งานโหมดทดสอบ ให้เอาตัวที่อยู่ในโหมดทดสอบ</li>
-							<li>- แต่ถ้าต้องการใช้งานจริง ก็เอาคีย์ หลังจากที่เปิดโหมดใช้งานจริงมา</li>
+						<ul className="list-disc text-gray-600 my-4 pl-4">
+							<li>ถ้าต้องการใช้งานโหมดทดสอบ ให้เอาตัวที่อยู่ในโหมดทดสอบ</li>
+							<li>แต่ถ้าต้องการใช้งานจริง ก็เอาคีย์ หลังจากที่เปิดโหมดใช้งานจริงมา</li>
 						</ul>
 						<div>
 							<h4 className="mb-2">หน้าตาของคีย์ที่อยู่ในโหมดทดสอบ</h4>

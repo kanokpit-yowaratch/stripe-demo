@@ -12,38 +12,42 @@ export default function Home() {
 					</p>
 
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-						<div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+						<div className="relative bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
 							<h2 className="text-xl font-semibold text-gray-800 mb-3">1. Setting up Stripe</h2>
-							<p className="text-gray-600 mb-4">
+							<p className="text-gray-600 mb-6">
 								<span className="font-semibold">ต้องเตรียมอะไรบ้าง? </span>Learn how to create a Stripe
 								account, get your API keys, and install the Stripe SDK.
 							</p>
-							<Link href="/setting-up-stripe" className="text-blue-500 hover:underline">
+							<Link
+								href="/setting-up-stripe"
+								className="absolute inset-x-0 left-6 bottom-3 text-blue-500 hover:underline">
 								Start with Configuration &rarr;
 							</Link>
 						</div>
 
-						<div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+						<div className="relative bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
 							<h2 className="text-xl font-semibold text-gray-800 mb-3">2. Creating a Checkout Session</h2>
-							<p className="text-gray-600 mb-4">
+							<p className="text-gray-600 mb-6">
 								<span className="font-semibold">ใช้งานที่ไหน ยังไง? </span>Guide on creating a checkout
 								session using Stripe API in Next.js API Routes.
 							</p>
-							<Link href="/implement" className="text-blue-500 hover:underline">
+							<Link
+								href="/implement"
+								className="absolute inset-x-0 left-6 bottom-3 text-blue-500 hover:underline">
 								Where is Stripe used in apps? &rarr;
 							</Link>
 						</div>
 
-						<div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-							<h2 className="text-xl font-semibold text-gray-800 mb-3">
-								3. Handling Payment Success/Failure
-							</h2>
-							<p className="text-gray-600 mb-4">
-								<span className="font-semibold">หลังจากการทำรายการไปแล้ว ต้องเช็คอะไรบ้าง? </span>Implementing
-								success and cancel pages to manage payment outcomes.
+						<div className="relative bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+							<h2 className="text-xl font-semibold text-gray-800 mb-3">3. Checkout and Redirect page</h2>
+							<p className="text-gray-600 mb-6">
+								<span className="font-semibold">ต้องสร้างทั้งหมดกี่หน้า มีอะไรบ้าง? </span>Guide to send order
+								and redirect
 							</p>
-							<Link href="/handle-result" className="text-blue-500 hover:underline">
-								Handle Result &rarr;
+							<Link
+								href="/all-ui-pages"
+								className="absolute inset-x-0 left-6 bottom-3 text-blue-500 hover:underline">
+								All UI pages &rarr;
 							</Link>
 						</div>
 					</div>
