@@ -23,7 +23,7 @@ export default function SettingUpStripe() {
 
 						<div className="mt-2 mb-2">
 							ก่อนเริ่มต้นใช้งาน Stripe หากยังไม่สมัคร ให้ทำการสมัครก่อน สามารถดูข้อมูลเพิ่มเติมได้ที่{' '}
-							<a href="https://www.youtube.com/watch?v=PjlY5fT0CCs">แนะนำ Stripe</a> หรือดูได้จาก vdo
+							<Link href="https://www.youtube.com/watch?v=PjlY5fT0CCs">แนะนำ Stripe</Link> หรือดูได้จาก vdo
 							ด้านล่างนี้
 						</div>
 						<iframe

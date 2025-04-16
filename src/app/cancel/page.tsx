@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const CancelPage = () => {
 	return (
@@ -8,9 +9,9 @@ const CancelPage = () => {
 				<p className="text-lg text-gray-700">
 					Your payment has been cancelled. Please try again later or contact support for assistance.
 				</p>
-				<a href="/" className="text-blue-500 hover:underline">
+				<Link href="/" className="text-blue-500 hover:underline">
 					Back to Home
-				</a>
+				</Link>
 			</div>
 		</div>
 	);
