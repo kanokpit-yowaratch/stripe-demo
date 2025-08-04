@@ -52,8 +52,8 @@ export default function Home() {
 						</div>
 					</div>
 
-					<Link href={`/checkout`} className="text-blue-500 hover:none">
-						Checkout
+					<Link href={`/checkout`} className="bg-blue-700 text-white hover:bg-blue-800">
+						ตัวอย่างการใช้งานหน้า Checkout
 					</Link>
 				</div>
 			</div>
