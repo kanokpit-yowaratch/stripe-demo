@@ -52,7 +52,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<Link href={`/checkout`} className="bg-blue-700 text-white hover:bg-blue-800">
+					<Link href={`/checkout`} className="py-2 px-4 rounded-lg bg-blue-700 text-white hover:bg-blue-800">
 						ตัวอย่างการใช้งานหน้า Checkout
 					</Link>
 				</div>
